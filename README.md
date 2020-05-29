@@ -12,5 +12,5 @@ My Profile -> API Tokens tab
 Modify your `config.json` file and execute the following commands to run the script as a cron job every hour.
 ```bash
 cd /opt && git clone https://github.com/bjh7242/CloudFlare-DDNS
-echo "0 * * * * root python3 /opt/CloudFlare-DDNS/updatedns.py" >> /etc/crontab
+echo "0 * * * * root cd /opt/CloudFlare-DDNS/ && python3 /opt/CloudFlare-DDNS/updatedns.py" >> /etc/crontab
 ```
